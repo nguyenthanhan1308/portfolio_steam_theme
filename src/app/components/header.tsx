@@ -6,9 +6,9 @@ export function HeaderSection() {
 	return (
 		<div className="flex justify-between">
 			<div className="flex gap-x-3">
-				<Link href="">Store</Link>
-				<Link href="">Library</Link>
-				<Link href="">Community</Link>
+				<Link href="/store">Store</Link>
+				<Link href="/library">Library</Link>
+				<Link href="/community">Community</Link>
 			</div>
 			<div className="flex gap-x-3">
 				<div className="flex bg-lime-700">
