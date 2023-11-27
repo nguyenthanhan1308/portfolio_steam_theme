@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Library() {
   return (
@@ -6,4 +6,4 @@ function Library() {
   )
 }
 
-export default Library
+export default Library;
