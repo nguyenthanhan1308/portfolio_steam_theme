@@ -99,13 +99,11 @@ html {
   padding: 0 !important;
 }
 
-#body {
-  height: 100vh;
-}
 #background {
   color: #c6d4df;
   background: var(--gpGradient-StoreBackground);
 }
+
 body {
   height: 100%;
   line-height: 1.5;
@@ -142,3 +140,8 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+#content {
+  min-width: 940px;
+}
+

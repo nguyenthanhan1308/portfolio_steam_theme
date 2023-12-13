@@ -31,20 +31,16 @@ export default function RootLayout({
 			lang="en"
 		>
 			<ThemeProvider>
-				<body
-					id="background"
-					className={`grid grid-cols-4 ${inter.className}`}
-				>
-					<div></div>
+				<body id="background">
 					<div
-						id="body"
-						className="col-start-2 col-span-2"
+						className={`px-4 flex flex-col items-center ${inter.className}`}
 					>
 						<HeaderSection />
-						{children}
+						<div id="content">
+							{children}
+						</div>
 						<FooterSection />
 					</div>
-					<div></div>
 				</body>
 			</ThemeProvider>
 		</html>
