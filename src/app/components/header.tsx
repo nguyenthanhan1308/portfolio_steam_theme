@@ -27,14 +27,14 @@ export function HeaderSection() {
 					<ArrowDropDown
 
 					/>
-					<Image
-						src="https://preview.redd.it/24qpigsiyu5c1.png?width=640&crop=smart&auto=webp&s=cfbe69943ae5d978ae64d80cb04522dbb151c016"
-						alt="profile avatar"
-						width={34}
-						height={34}
-						style={{aspectRatio: 1}}
-					/>
 				</div>
+				<Image
+					src="https://preview.redd.it/3ndn9ft88z5c1.png?width=320&crop=smart&auto=webp&s=2a47ceb323a29c0d3c7d115bf7dedb3e16a09267"
+					alt="profile avatar"
+					width={34}
+					height={34}
+					style={{aspectRatio: 1}}
+				/>
 			</div>
 		</div>
 	);
