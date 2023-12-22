@@ -12,23 +12,26 @@ export function HeaderSection() {
 	const navStyle = (router: string) => ({
 		fontWeight: 500,
 		textUnderlinePosition: "under",
-		textDecorationThickness: "3px!important",
+		textDecorationThickness: "3px",
 		color:
 			currentRouter === router
 				? "#1a9fff"
 				: "#c6d4df",
-		textDecoration:
+		textDecorationLine:
 			currentRouter === router
 				? "underline"
 				: "",
 	});
 	return (
-		<div id="content">
-			<div className="col-start-2 col-span-2 flex justify-between">
+		<div
+			style={{ background: "#171d25" }}
+			className="flex justify-center w-screen"
+		>
+			<div
+				id="content"
+				className="col-start-2 col-span-2 flex justify-between items-center"
+			>
 				<nav className="flex gap-x-3 uppercase">
-					{/* <ArrowBack/>
-					<ArrowForward/> */}
-					{/* LOGO */}
 					<Link
 						style={navStyle("/store")}
 						href={"/store"}
@@ -69,7 +72,7 @@ export function HeaderSection() {
 					</Link>
 				</nav>
 				<div className="flex gap-x-3">
-					<div className="flex">
+					<div className="flex text-xs gap-x-3 items-center">
 						<div
 							style={{
 								width: 46,
