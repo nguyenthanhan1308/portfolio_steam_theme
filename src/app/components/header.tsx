@@ -9,6 +9,7 @@ import {
 } from "@mui/icons-material";
 export function HeaderSection() {
 	const currentRouter = usePathname();
+
 	const navStyle = (router: string) => ({
 		fontWeight: 500,
 		textUnderlinePosition: "under",
@@ -22,6 +23,22 @@ export function HeaderSection() {
 				? "underline"
 				: "",
 	});
+
+	const imgStyle = {
+		aspectRatio: 1,
+		background:
+			"linear-gradient( to bottom, #515151 5%, #474747 95%)",
+		padding: 2,
+	};
+
+	const navLinkList: string[] = [
+		"store",
+		"community",
+		"profile",
+		"chat",
+		"support",
+	];
+
 	return (
 		<div
 			style={{ background: "#171d25" }}
@@ -32,44 +49,19 @@ export function HeaderSection() {
 				className="col-start-2 col-span-2 flex justify-between items-center"
 			>
 				<nav className="flex gap-x-3 uppercase">
-					<Link
-						style={navStyle("/store")}
-						href={"/store"}
-					>
-						Store
-					</Link>
-					<Link
-						style={navStyle(
-							"/community"
-						)}
-						href="/community"
-					>
-						Community
-					</Link>
-					<Link
-						style={navStyle(
-							"/profile"
-						)}
-						href="/profile"
-					>
-						Pause Mefo
-					</Link>
-					<Link
-						style={navStyle(
-							"/community"
-						)}
-						href="/community"
-					>
-						Chat
-					</Link>
-					<Link
-						style={navStyle(
-							"/community"
-						)}
-						href="/community"
-					>
-						Support
-					</Link>
+					{navLinkList.map((link) => {
+						return (
+							<Link
+								key={link}
+								style={navStyle(
+									`/${link}`
+								)}
+								href={link}
+							>
+								{link}
+							</Link>
+						);
+					})}
 				</nav>
 				<div className="flex gap-x-3">
 					<div className="flex text-xs gap-x-3 items-center">
@@ -94,7 +86,7 @@ export function HeaderSection() {
 						alt="profile avatar"
 						width={34}
 						height={34}
-						style={{ aspectRatio: 1 }}
+						style={imgStyle}
 					/>
 				</div>
 			</div>
