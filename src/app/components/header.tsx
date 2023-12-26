@@ -31,6 +31,11 @@ export function HeaderSection() {
 		padding: 2,
 	};
 
+	const headerStyle = {
+		minWidth: "940px",
+		height: "104px",
+	}
+
 	const navLinkList: string[] = [
 		"store",
 		"community",
@@ -45,7 +50,7 @@ export function HeaderSection() {
 			className="flex justify-center w-screen"
 		>
 			<div
-				id="content"
+				style={headerStyle}
 				className="col-start-2 col-span-2 flex justify-between items-center"
 			>
 				<nav className="flex gap-x-3 uppercase">

@@ -36,9 +36,7 @@ export default function RootLayout({
 						className={`px-4 flex flex-col items-center ${inter.className}`}
 					>
 						<HeaderSection />
-						<div id="content">
 							{children}
-						</div>
 						<FooterSection />
 					</div>
 				</body>

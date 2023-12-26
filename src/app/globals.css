@@ -141,8 +141,11 @@ h6 {
   isolation: isolate;
 }
 
-#content {
-  min-width: 940px;
-  height: 104px;
+.main-content {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1% 2%;
+  width: auto;
 }
 
